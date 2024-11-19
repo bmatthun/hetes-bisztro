@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/api")
 public class MainController {
 
-    private final hetesService hetesService;
+    private final HetesService hetesService;
 
-    public MainController(hetesService hetesService) {
+    public MainController(HetesService hetesService) {
         this.hetesService = hetesService;
     }
 
     @GetMapping("/aboutus")
     public String aboutus() {
-        return "aboutus";
+        return hetesService.getAboutUs;
     }
 }
