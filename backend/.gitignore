@@ -14,8 +14,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea/
-backend/.idea/
+.idea
 *.iws
 *.iml
 *.ipr
@@ -35,5 +34,3 @@ build/
 
 ### MacOS ###
 .DS_Store
-
-.env
